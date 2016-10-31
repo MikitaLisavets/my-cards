@@ -1,0 +1,8 @@
+<StackLayout>
+  <TextField #email hint="email"></TextField>
+  <TextField #password hint="password" secure="true"></TextField>
+  <Label text="recovery password" (tap)="recoveryPassword()"></Label>
+  <Button text="Login" (tap)="login(email, password)"></Button>
+  <Label text="or"></Label>
+  <Button text="Register" (tap)="signup()"></Button>
+</StackLayout>
